@@ -31,7 +31,7 @@ const Carousel = () => {
             <div className="overflow-hidden rounded-lg shadow-lg">
                 <img
                     src={images[currentIndex]}
-                    alt={`Slide ${currentIndex + 1}`}
+                    alt={`Imagen ${currentIndex + 1}`}
                     className="w-full h-72 object-cover transition-all duration-500 ease-in-out"
                 />
             </div>
@@ -57,7 +57,7 @@ const Carousel = () => {
                 {images.map((_, index) => (
                     <button
                         key={index}
-                        className={`w-3 h-3 mx-1 rounded-full ${currentIndex === index ? "bg-gray-800 scale-110" : "bg-gray-400 transition-all duration-200 ease-in-out "
+                        className={`w-3 h-3 mx-1 rounded-full ${currentIndex === index ? "bg-gray-800 scale-110" : "bg-gray-300 transition-all duration-200 ease-in-out "
                             }`}
                         onClick={() => setCurrentIndex(index)}
                     ></button>
