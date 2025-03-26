@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Carousel from "../components/Carousel";
 import Header from "@/components/header";
 import Navbar from "@/components/navbar";
+import SkillsPanel from "@/components/skills-panel";
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +13,7 @@ const Home: NextPage = () => {
       </div>
 
       {/* Segundo contenedor */}
-      <div className="w-full max-w-4xl mt-8 flex-grow">
+      <div className="w-full max-w-4xl mt-4 ">
         <Carousel />
       </div>
       <div className="w-full">
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       </div>
       <div className="w-full max-w-4xl mt-8">
 
+        <SkillsPanel></SkillsPanel>
       </div>
     </div>
 
