@@ -3,14 +3,14 @@ import React from "react";
 
 const SkillsPanel: React.FC = () => {
     const skills = [
-        { name: "React", icon: "⚛️", grade: "Basico-Intermedio" },
-        { name: "TypeScript", icon: "🟦", grade: "Básico-Intermedio" },
-        { name: "JavaScript", icon: "🟨", grade: "Básico-Intermedio" },
-        { name: "SQL", icon: "📚", grade: "Intermedio" },
+        { name: "React", icon: "⚛️", grade: "Basico" },
+        { name: "TypeScript", icon: "🟦", grade: "Básico" },
+        { name: "JavaScript", icon: "🟨", grade: "Básico" },
+        { name: "SQL", icon: "📚", grade: "Básico-Intermedio" },
         { name: "PostgreSQL", icon: "🐘", grade: "Intermedio" },
         { name: "TailwindCSS", icon: "🎨", grade: "Básico-Intermedio" },
-        { name: "Flutter", icon: "📱", grade: "Avanzado" },
-        { name: "Java", icon: "☕", grade: "Intermedio" },
+        { name: "Flutter", icon: "📱", grade: "Básico-Intermedio" },
+        { name: "Java", icon: "☕", grade: "Básico-Intermedio" },
         { name: "Git/GitHub", icon: "🔗", grade: "Básico-Intermedio" },
         {
             name: "PHP", icon: <svg
@@ -32,10 +32,10 @@ const SkillsPanel: React.FC = () => {
     ];
 
     return (
-        <div className="max-w-4xl mx-auto mt-10 px-4">
+        <div className="max-w-7xl mx-auto mt-10 px-4">
             {/* Encabezado */}
             <header className="text-center mb-8">
-                <h1 className="text-3xl font-bold text-white mt-20">HABILIDADES 👇</h1>
+                <h1 className="text-3xl font-bold text-white mt-20">HABILIDADES</h1>
 
             </header>
 
@@ -44,7 +44,7 @@ const SkillsPanel: React.FC = () => {
                 {skills.map((skill, index) => (
                     <div
                         key={index}
-                        className="flex flex-col items-center bg-gray-800 p-4 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
+                        className="flex flex-col items-center bg-gray-800  p-4 rounded-xl shadow-lg hover:bg-blue-950  hover:scale-105 transition-transform-colors duration-300 "
                     >
                         <span className="text-4xl mb-2">{skill.icon}</span>
                         <h3 className="text-lg font-semibold text-white">{skill.name}</h3>

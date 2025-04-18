@@ -13,7 +13,7 @@ const Carousel = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             nextSlide();
-        }, 3000); // Cambia la imagen cada 3 segundos
+        }, 5000); // Cambia la imagen cada 3 segundos
 
         return () => clearInterval(interval);
     }, [currentIndex]);
