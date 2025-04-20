@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Carousel from "../components/Carousel";
+import Carousel from "@/components/carousel";
 import Header from "@/components/header";
 import Navbar from "@/components/navbar";
 import SkillsPanel from "@/components/skills-panel";
