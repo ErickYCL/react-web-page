@@ -30,7 +30,7 @@ const Carousel = () => {
         <div className="relative w-full max-w-4xl mx-auto mt-5 overflow-hidden">
             {/* Contenedor de imágenes con efecto de deslizamiento */}
             <div
-                className="flex transition-transform duration-1000 ease-in-out"
+                className="flex transition-transform duration-500 ease-in-out"
                 style={{
                     transform: `translateX(-${currentIndex * 100}%)`,
                 }}
